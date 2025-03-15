@@ -51,3 +51,4 @@ programa {
    //Subtração simples: (7 - 5 = 2) (temos 2 passos: 6 está entre 5 e 7).
    //Adicionando os extremos (5 e 7): (2 + 1 = 3).
    //Resultado: Existem 3 números no intervalo: [5, 6, 7].
+   
