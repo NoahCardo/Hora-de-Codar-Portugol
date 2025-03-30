@@ -111,7 +111,6 @@ programa
   funcao verSaldo() {
 	    
       escreva("\nSeu saldo atual é: R$ ", saldo, "\n \n")
-	    inicio()
 
 	}
 
@@ -124,7 +123,6 @@ programa
     escreva("\n• Kit Canetas Arco-Íris 2 em 1: Brush Lettering e Ponta Fina: R$ 18,90;")
     escreva("\n• Bloco de Notas Com Cheirinho em Formato de Doces (Chocolate e Biscoitos): R$ 13,99;")
     escreva("\n• Nendoroid Reiner Braun (Attack On Titan): R$ 990,90.\n \n")
-    inicio()
 
   }
 
