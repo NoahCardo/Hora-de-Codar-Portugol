@@ -1,14 +1,15 @@
 programa
 {
-	
-   	real saldo = 150.00// Float
+
+    //Variáveis Globais
+    real saldo = 150.00//Float
     cadeia nome, senha //Coloque o Nome que Bem Entender; 
     //Contudo, Para Brincar, Sua Senha É: "equipe5"!
+    inteiro senha_sec = 3589 //Para Brincar, Sua Senha Secundária É: "3589"
+    inteiro num_conta = 2201 //Para Brincar, o Número da Conta É: "2201"
     inteiro opcao
     real saque
-    inteiro num_conta = 2201 //Para Brincar, o Número da Conta É: 2201
     real valor_transf
-    inteiro senha_sec = 3589 //Para Brincar, Sua Senha É: "3589"
 
 	funcao inicio() {
 
@@ -16,7 +17,7 @@ programa
 
     escreva("\nInforme-nos o Seu Nome: ")
     leia(nome)
-    escreva("Informe-nos a Sua Senha: ")
+    escreva("Informe-nos a Sua Senha (//Para Brincar, Sua Senha É: 'equipe5'): ")
     leia(senha)
 
     se ( checaLogin(senha) ) {
@@ -30,6 +31,7 @@ programa
 
     escreva("Olá ", nome, ", É um Prazer Ter Você Por Aqui!~\n")
 
+                //Menu de Opções
 		escreva("\nEscolha uma Opção:\n")
 		escreva("1. Ver Saldo;\n")
 		escreva("2. Ver Extrato;\n")
@@ -98,7 +100,7 @@ programa
 
   funcao logico checaSenhaSec(inteiro senha_sec) {
     inteiro entrada_senha
-    escreva("\nPara Prosseguir, Informe-nos a Sua Senha Secundária: ")
+    escreva("\nPara Prosseguir, Informe-nos a Sua Senha Secundária (//Para Brincar, Sua Senha Secundária É: '3589'!): ")
     leia(entrada_senha)
 
     se (entrada_senha == senha_sec) {
@@ -163,7 +165,7 @@ programa
 
   funcao fazerTransferencia () {
 
-    escreva("\nInforme-nos o Número da Conta para a Qual Deseja Realizar sua Transferência: ")
+    escreva("\nInforme-nos o Número da Conta para a Qual Deseja Realizar sua Transferência (//Para Brincar, o Número da Conta É: '2201'): ")
     leia(num_conta)
 
     se (num_conta != 2201) {
